@@ -1,18 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { SiTheconversation } from "react-icons/si";
 function NavBar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const handleHam = () => setMenuOpen(!isMenuOpen);
+  
   const handleLinkClick = () => setMenuOpen(false);
 
   return (
-    <div className="relative bg-emerald-600 text-emerald-200">
+    <div className="relative bg-emerald-800 text-emerald-200">
       <div className="flex justify-around items-center h-14 px-4">
         <p className="text-3xl font-bold">
-          <Link to="/" onClick={handleLinkClick} className="transition-colors duration-300 hover:text-emerald-100">yaps</Link>
+          <Link to="/" onClick={handleLinkClick} className="flex flex-row items-center gap-2 transition-colors duration-300 hover:text-emerald-100">
+          <SiTheconversation size={25}/> yaps</Link>
         </p>
 
         <ul className="hidden sm:flex gap-5">
