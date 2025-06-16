@@ -1,8 +1,9 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
-import SearchSection from'../components/SearchSection.jsx'
+import SearchSection from'../components/home page/SearchSection.jsx'
 import InvertLens from '../components/InvertLens'; 
-import BlogsHorizontallScroll from '../components/BlogsHorizontallScroll.jsx
+import BlogsList from '../components/home page/BlogsList.jsx';
+import Footer from '../components/Footer.jsx';
 
 function HomePage() {
   return (
@@ -10,7 +11,8 @@ function HomePage() {
       <InvertLens />
       <NavBar />
       <SearchSection />
-      <BlogsHorizontallScroll />
+      <BlogsList />
+      <Footer />
     </div>
   )
 }

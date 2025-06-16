@@ -20,7 +20,7 @@ function MainPost() {
       </div>
         <div className='p-2'>
         <h3 className='pt-5 text-3xl'>How to win in CR?</h3>
-        <p className=' font-light text-[0.8rem]'>2025/5/5 9:08pm</p>
+        <p className=' font-light text-[0.8rem]'>2025/5/5 9:08pm • dofiki</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
            Recusandae expedita sapiente corporis cum maiores [...more]</p>
       </div>

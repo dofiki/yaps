@@ -2,8 +2,7 @@ import React from 'react'
 
 function NotFoundPage() {
   return (
-    <div>
-        <NavBar />
+    <div className='pt-14'>
         Not FOUND
     </div>
   )

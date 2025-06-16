@@ -6,8 +6,8 @@ body{
 
 @layer utilities {
   .invert-blend {
-    background: rgba(24, 0, 141, 0.331);
-    mix-blend-mode:color-dodge;
+    background: rgb(255, 217, 0);
+    mix-blend-mode:difference;
     filter: invert(1);
   }
 }

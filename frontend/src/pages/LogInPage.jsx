@@ -1,10 +1,10 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
+
 
 function LogInPage() {
   return (
-    <div>
-      <NavBar />
+    <div className="h-[21rem] pt-14">
+      login
     </div>
   )
 }

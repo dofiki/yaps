@@ -1,9 +1,9 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
+
+
 function BlogsPage() {
   return (
-    <div>
-      <NavBar />
+    <div className="h-[21rem] pt-14">
+      blogs
     </div>
   )
 }

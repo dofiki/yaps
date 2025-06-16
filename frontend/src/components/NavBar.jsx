@@ -10,7 +10,7 @@ function NavBar() {
   const handleLinkClick = () => setMenuOpen(false);
 
   return (
-    <div className="relative bg-emerald-800 text-emerald-200">
+<div className="fixed top-0 left-0 w-full z-50 bg-emerald-800 text-emerald-200">
       <div className="flex justify-around items-center h-14 px-4">
         <p className="text-3xl font-bold">
           <Link to="/" onClick={handleLinkClick} className="flex flex-row items-center gap-2 transition-colors duration-300 hover:text-emerald-100">

@@ -14,9 +14,10 @@ function InvertLens() {
 
   return (
     <div
-      className="hidden pointer-events-none  sm:block fixed z-[9999] w-30 h-30 rounded-full invert-blend transition-transform duration-10"
+      className="hidden pointer-events-none  sm:block fixed z-[9999] 
+      w-6 h-6 rounded-full invert-blend "
       style={{
-        transform: `translate(${position.x - 60}px, ${position.y - 60}px)`,
+        transform: `translate(${position.x - 12}px, ${position.y - 12}px)`,
       }}
     />
   );
