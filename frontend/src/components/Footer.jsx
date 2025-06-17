@@ -2,9 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { SiTheconversation } from "react-icons/si";
 import { SlSocialInstagram } from "react-icons/sl";
-import { SlSocialReddit } from "react-icons/sl";
 import { SlSocialLinkedin } from "react-icons/sl";
-import { SlSocialFacebook } from "react-icons/sl";
 
 function Footer() {
   return (
@@ -19,7 +17,7 @@ function Footer() {
             <p className='text-white hover:text-emerald-300 transition-color duration:300'>&gt; how to hate shit?</p>
             <p className='text-white hover:text-emerald-300 transition-color duration:300'>&gt; how to revolt?</p>
         </div>
-        <div className='w-2/4 p-4 text-xl text-white sm:pt-8'>
+        <div className='w-2/4 p-4 text-[1rem] text-white sm:pt-8'>
         <ul className="flex flex-col gap-1 items-end sm:items-start">
           <li><Link to="/" className="transition-colors duration-200 hover:text-emerald-200" >Home</Link></li>
           <li><Link to="/blogs" className=" transition-colors duration-200 hover:text-emerald-200" >Blogs</Link></li>
@@ -37,8 +35,8 @@ function Footer() {
                 </p>
         </div>
         <div className='w-2/4 p-4 sm:pt-8 text-emerald-200  flex gap-2 justify-end items-end sm:items-start'>
-            <SlSocialInstagram size={28} className='hover:text-white'/>
-            <SlSocialLinkedin size={28} className='hover:text-white'/>
+            <SlSocialInstagram size={25 } className='hover:text-white'/>
+            <SlSocialLinkedin size={25} className='hover:text-white'/>
 
         </div>
       </div>
