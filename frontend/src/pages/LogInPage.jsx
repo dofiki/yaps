@@ -1,10 +1,11 @@
 import React from 'react'
+import LoginCard from '../components/login/LoginCard'
 
 
 function LogInPage() {
   return (
-    <div className="h-[21rem] pt-14">
-      login
+    <div className=" pt-14">
+      <LoginCard />
     </div>
   )
 }
