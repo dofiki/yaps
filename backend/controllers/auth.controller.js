@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import User from "../models/user.model.js";
 import generateTokenSetCookie from '../utils/generateTokenSetCookie.util.js';
 
-const signUp = async (req, res) => {
+export const signUp = async (req, res) => {
     try {
         const { username, email, password } = req.body;
 
@@ -41,4 +41,36 @@ const signUp = async (req, res) => {
     }
 };
 
-export default signUp;
+export const logIn = async (req, res) =>{
+    try{
+        const {username,password} = req.body;
+
+        const user = await User.findOne({username});
+        const isPassCorrect = await bcrypt.compare(password, user?.password || "");
+
+        if(!user || !isPassCorrect){
+            return res.status(400).json({error:"Invalid login credentials"});
+        }
+
+        // generate jwt cookie
+        generateTokenSetCookie(user._id, res);
+        
+        res.status(200).json({
+            _id: user._id,
+            username: user.username,
+        })
+
+    }catch(error){
+        res.status(500).json({error:"Internal server error: log in module"});
+    }
+}
+
+export const logOut = async (req, res) =>{
+    try{
+       res.cookie('jwt',"",{maxAge: 0});
+       res.status(200).json({message: "Logged out succesfully"});
+
+    }catch(error){
+        res.status(500).json({error:"Error at logOut module"})
+    }
+}
