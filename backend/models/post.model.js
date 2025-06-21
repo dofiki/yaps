@@ -9,11 +9,11 @@ const PostSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    categories: {
+    categories: [{
         type: String,
         enum: ["Tech", "Food", "Health", "Lifestyle", "Fashion", "Art"],
         required: true
-    },
+    }],
     author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User", 
